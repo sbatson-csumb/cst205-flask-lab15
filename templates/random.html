@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="text-center">
+    <h1>Random Image Negative</h1>
+
+    <p>Selected image: {{ original_name }}</p>
+
+    <img
+        src="{{ url_for('static', filename=image_name) }}"
+        class="img-fluid w-75"
+        alt="Negative version of the selected image">
+</div>
+{% endblock %}

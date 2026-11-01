@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Image Information</h1>
+
+{% for key, value in image_info.items() %}
+<p><strong>{{ key }}:</strong> {{ value }}</p>
+{% endfor %}
+{% endblock %}
